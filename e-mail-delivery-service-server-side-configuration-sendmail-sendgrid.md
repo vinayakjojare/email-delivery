@@ -61,6 +61,7 @@ For Ubuntu and Debian, run the following command:
    `FEATURE('access_db')dnl`
    `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
    `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
+4. If you want to skip dns-lookup for the smtp.sendgrid.net due to its changing IP address pool, simply add smtp.sendgrid.net in square bracket as:            `define('SMART_HOST', '[smtp.sendgrid.net]')dnl`
 
 ### Configuring sendmail.mc in Ubuntu and Debian
 {: #configure-sendmailmc-ubuntu-debian}
